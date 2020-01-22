@@ -23,4 +23,4 @@ var storage = new gridStorage({
 var uploadFile = multer({ storage: storage }).single("file");
 var uploadFilesMiddleware = util.promisify(uploadFile);
 
-export default uploadFilesMiddleware;
+module.exports = uploadFilesMiddleware;
